@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Never Without You — Chapter 1</title>
+<style>
+:root{--bg:#f6f4f1;--ink:#26231f;--mute:#7a736a;--card:#fff;--line:#e4dfd8;--left:#ffffff;--leftInk:#26231f;--right:#d9ecdf;--rightInk:#1d2a22;--accent:#b4506b;--note:#fff6e0;--noteLine:#ecd9a5}
+@media (prefers-color-scheme:dark){:root{--bg:#171513;--ink:#ece7e0;--mute:#9b9388;--card:#201d1a;--line:#34302b;--left:#2a2622;--leftInk:#ece7e0;--right:#2d4a3a;--rightInk:#e8f3ec;--accent:#e08aa3;--note:#2c2616;--noteLine:#5a4b22}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.6rem;line-height:1.25;margin:.4em 0 .8em}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.6em 1em;margin:0 0 .8em}
+summary{cursor:pointer;font-weight:600}
+details ul{margin:.6em 0 .4em;padding-left:1.2em}
+details li{margin:.35em 0}
+.date{margin:2.2em 0 .6em;text-align:center;font-size:.95rem;font-weight:600;letter-spacing:.04em;color:var(--mute);display:flex;align-items:center;gap:.8em}
+.date::before,.date::after{content:"";flex:1;border-top:1px solid var(--line)}
+.date span{display:block;text-align:center}
+.conversation{margin-top:1.4em}
+.convo{margin:1.6em 0 .4em;padding:.35em .9em;display:table;margin-inline:auto;font-size:.95rem;font-weight:600;background:var(--card);border:1px solid var(--line);border-radius:999px}
+.ts{display:block;text-align:center;font-size:.75rem;color:var(--mute);margin:.2em 0 .8em}
+.receipt,.event{text-align:center;font-size:.78rem;color:var(--mute);margin:.5em 0}
+.event{font-style:italic}
+.msg{display:flex;flex-direction:column;margin:.28em 0;max-width:100%}
+.msg.left{align-items:flex-start}
+.msg.right{align-items:flex-end}
+.who{font-size:.72rem;color:var(--mute);margin:.5em .9em .1em}
+.bubble{margin:0;padding:.5em .95em;border-radius:18px;max-width:82%;overflow-wrap:anywhere;white-space:pre-wrap;box-shadow:0 1px 0 rgba(0,0,0,.04)}
+.left .bubble{background:var(--left);color:var(--leftInk);border:1px solid var(--line);border-bottom-left-radius:6px}
+.right .bubble{background:var(--right);color:var(--rightInk);border-bottom-right-radius:6px}
+.bubble.emoji-only{font-size:1.6rem;line-height:1.3;padding:.25em .7em}
+.author-note{margin-top:3em;padding:1.2em 1.1em;background:var(--note);border:1px dashed var(--noteLine);border-radius:14px}
+.author-note h2{margin:.1em 0 .6em;font-size:1rem}
+.author-note p{margin:.5em 0}
+.author-note .dots{text-align:center;color:var(--mute);margin:.1em 0}
+@media (max-width:480px){.bubble{max-width:90%}h1{font-size:1.35rem}}
+@media print{body{background:#fff;color:#000}main{max-width:none;padding:0}.msg,.receipt,.event{break-inside:avoid}details>*:not(summary){display:block}.left .bubble,.right .bubble{background:#fff;color:#000;border:1px solid #bbb}.author-note{background:#fff;border-color:#999}}
+</style>
+</head>
+<body>
+<main>
+<h1>Never Without You — Chapter 1</h1>
+<details><summary>Character and alias key</summary><ul><li><strong>tt’</strong> — TingTing / Ting / Muay — the new hire; 22; the company owner’s daughter</li><li><strong>Patricia🌻</strong> — Patricia / Pat / P’Pat — 28; on the B2B marketing team; assigned to look after Ting</li><li><strong>Duen</strong> — P’Duen — Pat’s lead on the B2B marketing team</li><li><strong>JJAPP</strong> — Japp — Pat’s coworker</li><li><strong>BEll</strong> — Bell — Pat’s coworker, same rank as Pat</li><li><strong>Namfon</strong> — Namfon / P’Fon — coworker</li><li><strong>font_pcp</strong> — Font (“Fon”) — Ting’s close friend; named as Japp’s partner in this chapter</li><li><strong>lalin</strong> — Lalin (“Lin”) — Ting’s close friend</li><li><strong>khim09</strong> — Khim — Pat’s close friend; her wife is Nong Chan</li><li><strong>Papa / Mama</strong> — ปะป๊า / หม่าม้า — Ting’s parents (Family 🏠 group)</li><li><strong>Mentioned only</strong> — P’Claire (eclaire), P’Sita (the driver who takes Ting to work), Nong Chan, Auntie Ying, Khun Kasem, P’Off (product briefing)</li></ul></details>
+<details><summary>Translation notes</summary><ul><li>Source check: the JSON holds 687 records (indices 0–686, no gaps or duplicates) and agrees line for line with the TXT export. No empty or unparsed records; no hidden text or media found in the saved record HTML.</li><li>This chapter contains no pictures, so there are no img/ references.</li><li>Times are converted from Thai notation (e.g. 08:57 น. → 8:57 a.m.). Read receipts: “read” → [Read], “read (4)” → [Read by 4].</li><li>The group พี่ไม่ทราบ is rendered “Unknown Elders”, per the project convention. (The name plays on “ไม่ทราบ”, “I don’t know”, which the characters joke about.)</li><li>ปะป๊า and หม่าม้า (Ting’s parents, also Thai sender names) appear as Papa and Mama. “Fon” / “Lin” are the friends’ affectionate shortenings of Font and Lalin.</li><li>ฮึบ is rendered “Hup” — the little grunt of bracing yourself and holding it together. “Boar breathing” (ลมหายใจหมูป่า) is P’Duen’s loud-sighing habit.</li><li>แฟน (partner) is kept gender-neutral. ยัยงุ้งงิ้ง is rendered “Miss Whiny-Pouty”. ประจบ / ประกบ (flatter / pair up) wordplay is kept as “butter up” / “pair up”.</li><li>Ting’s “Auntie Ying … Teacher Ting” lines (records 586–587) are ambiguous in the source and are translated literally.</li><li>Records 681–683 are three “.” separator lines; records 684–686 are the author’s closing note. “Nong Miu” and “P’Farang” are kept as written.</li><li>Existing English messages, emojis, laughter (555…) and @-mentions are kept exactly as in the source.</li></ul></details>
+<h2 class="date" data-record="0"><span>2026</span></h2>
+<h2 class="date" data-record="1"><span>August 3rd<br>Monday</span></h2>
+<section class="conversation">
+<h3 class="convo" data-record="2">prettybabies (3)</h3>
+<time class="ts" data-record="3">8:57 a.m.</time>
+<article class="msg right" data-record="4" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Late on my very first day of work</p></article>
+<article class="msg right" data-record="5" data-sender="tt’"><span class="who">tt’</span><p class="bubble">What&#x27;s with this traffic anyway</p></article>
+<article class="msg left" data-record="6" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Papa&#x27;s gonna scold you for sure</p></article>
+<article class="msg right" data-record="7" data-sender="tt’"><span class="who">tt’</span><p class="bubble">He can just fire his kid 🤷🏻‍♀️</p></article>
+<article class="msg left" data-record="8" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">5555555555</p></article>
+<article class="msg left" data-record="9" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Miss Princess is acting like such a problem child</p></article>
+<article class="msg right" data-record="10" data-sender="tt’"><span class="who">tt’</span><p class="bubble">And who even wanted to work first? I was forced into it, all of it</p></article>
+<article class="msg left" data-record="11" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">And you&#x27;ve lived in the city your whole life, and you still don&#x27;t know how bad Bangkok traffic is, huh</p></article>
+<article class="msg right" data-record="12" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Too lazy to wake up 😡</p></article>
+<article class="msg right" data-record="13" data-sender="tt’"><span class="who">tt’</span><p class="bubble">P’Sita told me I had to leave by eight at the latest, but I said make it eight thirty</p></article>
+<article class="msg left" data-record="14" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">P’Japp&#x27;s here</p></article>
+<article class="msg right" data-record="15" data-sender="tt’"><span class="who">tt’</span><p class="bubble">So when are you going to work for once?</p></article>
+<article class="msg left" data-record="16" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">After my money runs out</p></article>
+<article class="msg right" data-record="17" data-sender="tt’"><span class="who">tt’</span><p class="bubble">And may I ask when Khun Pitchaphat&#x27;s money will run out?</p></article>
+<article class="msg left" data-record="18" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">No idea at all, ma&#x27;am. Surely not in this lifetime.</p></article>
+<article class="msg right" data-record="19" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I have money too. Why would I need to work?</p></article>
+<article class="msg right" data-record="20" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Papa and Mama are bullying their child so much</p></article>
+<article class="msg left" data-record="21" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Complain, complain, complain. Complaining every day, about everything</p></article>
+<article class="msg left" data-record="22" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">No wonder P’Claire named you Miss Whiny-Pouty</p></article>
+<article class="msg right" data-record="23" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Well, is there anything to be happy about? 😠</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="24">B2B marketing (5)</h3>
+<time class="ts" data-record="25">9:05 a.m.</time>
+<article class="msg left" data-record="26" data-sender="Duen"><span class="who">Duen</span><p class="bubble">Today Nong Ting starts her first day of work. I&#x27;m leaving her in Pat&#x27;s care, okay? @Patricia🌻</p></article>
+<article class="msg right" data-record="27" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Yes, P’Duen.</p></article>
+<article class="msg right" data-record="28" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">But Pat hasn&#x27;t seen her yet. Maybe she&#x27;s still with HR?</p></article>
+<article class="msg left" data-record="29" data-sender="Duen"><span class="who">Duen</span><p class="bubble">I don&#x27;t know either. Try asking around.</p></article>
+<article class="msg right" data-record="30" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Okay.</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="31">Unknown Elders (4)</h3>
+<time class="ts" data-record="32">9:07 a.m.</time>
+<article class="msg left" data-record="33" data-sender="Namfon"><span class="who">Namfon</span><p class="bubble">Bell, don&#x27;t laugh so loud, P’Duen will hear you @BEll</p></article>
+<article class="msg left" data-record="34" data-sender="BEll"><span class="who">BEll</span><p class="bubble">5555555555555</p></article>
+<article class="msg left" data-record="35" data-sender="BEll"><span class="who">BEll</span><p class="bubble">Of course she doesn&#x27;t know — I just can&#x27;t help laughing. Doesn&#x27;t know, her whole life</p></article>
+<article class="msg left" data-record="36" data-sender="BEll"><span class="who">BEll</span><p class="bubble">Poor Pat</p></article>
+<article class="msg right" data-record="37" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Yes 🙂</p></article>
+<article class="msg left" data-record="38" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">Nong&#x27;s stuck in traffic.</p></article>
+<article class="msg left" data-record="39" data-sender="Namfon"><span class="who">Namfon</span><p class="bubble">So it&#x27;s actually true, then</p></article>
+<article class="msg left" data-record="40" data-sender="Namfon"><span class="who">Namfon</span><p class="bubble">Khun Kasem&#x27;s kid really is coming to work</p></article>
+<article class="msg left" data-record="41" data-sender="BEll"><span class="who">BEll</span><p class="bubble">Of course it&#x27;s true, P’Fon. They&#x27;ve been gossiping about it for ages</p></article>
+<article class="msg left" data-record="42" data-sender="Namfon"><span class="who">Namfon</span><p class="bubble">So who exactly is Japp&#x27;s partner?</p></article>
+<article class="msg left" data-record="43" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">55555</p></article>
+<article class="msg left" data-record="44" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">They went to the same school, been close for ages</p></article>
+<article class="msg left" data-record="45" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">Japp has met her a few times too</p></article>
+<article class="msg left" data-record="46" data-sender="BEll"><span class="who">BEll</span><p class="bubble">So how is she?</p></article>
+<article class="msg left" data-record="47" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">Pampered rich girl, a complainer, quick to snap. The full set</p></article>
+<article class="msg left" data-record="48" data-sender="Namfon"><span class="who">Namfon</span><p class="bubble">Best of luck, you @Patricia🌻</p></article>
+<article class="msg right" data-record="49" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Yes. Everything is Pat&#x27;s job. Fine, I&#x27;ll be Pat.</p></article>
+<article class="msg right" data-record="50" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Even though a lot of it I think is really P’Duen&#x27;s job</p></article>
+<article class="msg left" data-record="51" data-sender="BEll"><span class="who">BEll</span><p class="bubble">55555555</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="52">Family 🏠 (3)</h3>
+<time class="ts" data-record="53">9:22 a.m.</time>
+<article class="msg right" data-record="54" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Papa, if traffic is going to be this bad, how about we just move the office?</p></article>
+<article class="msg right" data-record="55" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;m exhausted 🫠</p></article>
+<article class="msg left" data-record="56" data-sender="Papa"><span class="who">Papa</span><p class="bubble">You&#x27;re just looking for something to whine about, aren&#x27;t you</p></article>
+<article class="msg left" data-record="57" data-sender="Papa"><span class="who">Papa</span><p class="bubble">Don&#x27;t be late again. Papa doesn&#x27;t want people to think badly of you. When you go to work, you have to work earnestly, sweetheart.</p></article>
+<article class="msg right" data-record="58" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Mama, can I just work for one month? I didn&#x27;t want to work for the social side. I&#x27;ve got more than enough social life already</p></article>
+<article class="msg left" data-record="59" data-sender="Mama"><span class="who">Mama</span><p class="bubble">Mama didn&#x27;t send you to work for the social side either. Mama sent you to learn the work before you step in to manage for real, dear.</p></article>
+<article class="msg right" data-record="60" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Nobody loves meee</p></article>
+<article class="msg left" data-record="61" data-sender="Mama"><span class="who">Mama</span><p class="bubble">Ting Ting, do your best. Mama is waiting to hear Ying&#x27;s report on you.</p></article>
+<article class="msg right" data-record="62" data-sender="tt’"><span class="who">tt’</span><p class="bubble">HR&#x27;s calling me again. Can&#x27;t they wait a minute? 🤬</p></article>
+<article class="msg left" data-record="63" data-sender="Papa"><span class="who">Papa</span><p class="bubble">Should Papa just order your salary slashed down to almost nothing?</p></article>
+<article class="msg right" data-record="64" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Whose salary?</p></article>
+<article class="msg right" data-record="65" data-sender="tt’"><span class="who">tt’</span><p class="bubble">HR&#x27;s, right?</p></article>
+<article class="msg left" data-record="66" data-sender="Papa"><span class="who">Papa</span><p class="bubble">Your salary, that&#x27;s whose.</p></article>
+<article class="msg right" data-record="67" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Arrived, arrived!! P’Sita drives like a maniac</p></article>
+<article class="msg right" data-record="68" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Please don&#x27;t cut me out of the inheritance yet, okay? I&#x27;m Papa&#x27;s only daughter, after all 🥺</p></article>
+<article class="msg right" data-record="69" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Love you Papa, mwah mwah. Off to work now!</p></article>
+<article class="msg left" data-record="70" data-sender="Papa"><span class="who">Papa</span><p class="bubble emoji-only">🤣</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="71">khim09</h3>
+<time class="ts" data-record="72">9:30 a.m.</time>
+<article class="msg right" data-record="73" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Khim</p></article>
+<article class="msg right" data-record="74" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">The universe really loves testing my system</p></article>
+<article class="msg right" data-record="75" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">It makes me think about my life before this, every single day</p></article>
+<article class="msg right" data-record="76" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">The good life is yesterday&#x27;s life</p></article>
+<article class="msg left" data-record="77" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Again? What is it this time?</p></article>
+<article class="msg right" data-record="78" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">On top of looking after P’Duen and the team, I now have to look after a new kid too</p></article>
+<article class="msg right" data-record="79" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Bell and I are the same rank, but okay, it has to be Pat</p></article>
+<article class="msg right" data-record="80" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">But I won&#x27;t complain. In case tomorrow brings something worse 🙂</p></article>
+<article class="msg left" data-record="81" data-sender="khim09"><span class="who">khim09</span><p class="bubble">55555555555</p></article>
+<article class="msg left" data-record="82" data-sender="khim09"><span class="who">khim09</span><p class="bubble">You&#x27;re the best human at appreciating the present, Pat</p></article>
+<article class="msg right" data-record="83" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Nobody endures the universe&#x27;s beatings as well as I do</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="84">prettybabies (3)</h3>
+<time class="ts" data-record="85">9:43 a.m.</time>
+<article class="msg right" data-record="86" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Guys</p></article>
+<article class="msg right" data-record="87" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;ve found the reason I&#x27;ll want to go to work every day 🫪</p></article>
+<article class="msg left" data-record="88" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Funny.</p></article>
+<article class="msg left" data-record="89" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">This morning you were still grumbling like a bear raiding a beehive</p></article>
+<article class="msg right" data-record="90" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Let me do my duty as a good employee first, okay. I&#x27;ll come talk later</p></article>
+<article class="msg left" data-record="91" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Oh, go on then. Be diligent</p></article>
+<article class="msg left" data-record="92" data-sender="lalin"><span class="who">lalin</span><p class="bubble">Is there anything that can actually make her diligent?</p></article>
+<article class="msg left" data-record="93" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Yeah, I&#x27;m confused. Better ask P’Japp</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="94">Unknown Elders (4)</h3>
+<p class="event" data-record="95">Patricia🌻 added tt’ to the group.</p>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="96">Unknown Elders (5)</h3>
+<time class="ts" data-record="97">9:46 a.m.</time>
+<article class="msg right" data-record="98" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Hello! My name is Ting Ting. Please take care of me 🥺</p></article>
+<article class="msg left" data-record="99" data-sender="BEll"><span class="who">BEll</span><p class="bubble">I&#x27;m P’Bell. Please take care of me too, okay. Heh</p></article>
+<article class="msg left" data-record="100" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">P’Belllll</p></article>
+<article class="msg left" data-record="101" data-sender="BEll"><span class="who">BEll</span><p class="bubble">It&#x27;s just that seeing her surname gives me the chills and shivers</p></article>
+<article class="msg right" data-record="102" data-sender="tt’"><span class="who">tt’</span><p class="bubble">My surname isn&#x27;t worth anything at all. I still got kicked out to go to work</p></article>
+<article class="msg right" data-record="103" data-sender="tt’"><span class="who">tt’</span><p class="bubble">And P’Japp, you saw me just now and didn&#x27;t even say hi. Playing it all stiff and aloof</p></article>
+<article class="msg left" data-record="104" data-sender="Namfon"><span class="who">Namfon</span><p class="bubble">Oh, burned by the kid 55555</p></article>
+<article class="msg left" data-record="105" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">I was putting on my serious face, getting ready to go talk to P’Duen 5555</p></article>
+<article class="msg left" data-record="106" data-sender="BEll"><span class="who">BEll</span><p class="bubble">If you get stuck anywhere, you can ask Pat, okay</p></article>
+<article class="msg right" data-record="107" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Can I really ask? P’Pat has such a blank face 🥺</p></article>
+<article class="msg left" data-record="108" data-sender="BEll"><span class="who">BEll</span><p class="bubble">Lots of outside-team work has been coming in lately, you see</p></article>
+<article class="msg left" data-record="109" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">Every period, if it&#x27;s P’Pat</p></article>
+<article class="msg left" data-record="110" data-sender="BEll"><span class="who">BEll</span><p class="bubble">Capable person = gets extra work, you know</p></article>
+<article class="msg left" data-record="111" data-sender="BEll"><span class="who">BEll</span><p class="bubble">P’Duen&#x27;s favorite child</p></article>
+<article class="msg left" data-record="112" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">Favorite child or stepchild?</p></article>
+<article class="msg right" data-record="113" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Why?</p></article>
+<article class="msg left" data-record="114" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">Whatever work comes up, she likes to have P’Pat help with it</p></article>
+<article class="msg right" data-record="115" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Oh</p></article>
+<article class="msg right" data-record="116" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Is the office usually this quiet?</p></article>
+<article class="msg left" data-record="117" data-sender="Namfon"><span class="who">Namfon</span><p class="bubble">Yep, we mostly chat in here. P’Duen gets irritated easily</p></article>
+<article class="msg left" data-record="118" data-sender="Namfon"><span class="who">Namfon</span><p class="bubble">She likes working quietly. If anyone&#x27;s a bit loud, she sighs loudly</p></article>
+<article class="msg left" data-record="119" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">Wild boar breathing</p></article>
+<article class="msg right" data-record="120" data-sender="tt’"><span class="who">tt’</span><p class="bubble">55555555</p></article>
+<article class="msg right" data-record="121" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;m off to on-board first, okay. Ting will be back later</p></article>
+<article class="msg left" data-record="122" data-sender="BEll"><span class="who">BEll</span><p class="bubble">Okay</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="123">Patricia🌻</h3>
+<time class="ts" data-record="124">10:10 a.m.</time>
+<article class="msg right" data-record="125" data-sender="tt’"><span class="who">tt’</span><p class="bubble">P’Pat, if there&#x27;s anything Ting can help with, just tell me 🥺</p></article>
+<article class="msg left" data-record="126" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Okay.</p></article>
+<article class="msg left" data-record="127" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">If there&#x27;s anything, message me privately. I&#x27;ll reply faster. I don&#x27;t often look in that group, except for work groups.</p></article>
+<article class="msg left" data-record="128" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Ting, you&#x27;re on-boarding right now, aren&#x27;t you?</p></article>
+<article class="msg right" data-record="129" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Yes.</p></article>
+<article class="msg left" data-record="130" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Careful you don&#x27;t get scolded, okay. For playing on your phone</p></article>
+<article class="msg right" data-record="131" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Who would dare scold me</p></article>
+<article class="msg right" data-record="132" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Oops. Well, I&#x27;m scared, but let me play just a little 🤏</p></article>
+<article class="msg left" data-record="133" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">That first sentence was just a voice in your head, wasn&#x27;t it?</p></article>
+<article class="msg right" data-record="134" data-sender="tt’"><span class="who">tt’</span><p class="bubble">5555555555</p></article>
+<article class="msg left" data-record="135" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Go on, listen to them carefully so you&#x27;ll know what you should know.</p></article>
+<article class="msg right" data-record="136" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Understood 🫡</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="137">prettybabies (3)</h3>
+<time class="ts" data-record="138">10:17 a.m.</time>
+<article class="msg right" data-record="139" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Did you ask P’Japp yet? Know now? @font_pcp</p></article>
+<article class="msg left" data-record="140" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Nope</p></article>
+<article class="msg left" data-record="141" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">What is it, that reason?</p></article>
+<article class="msg right" data-record="142" data-sender="tt’"><span class="who">tt’</span><p class="bubble">First time in my life I&#x27;ve met someone as beautiful as myself</p></article>
+<article class="msg right" data-record="143" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I can&#x27;t take it 🫠</p></article>
+<article class="msg left" data-record="144" data-sender="lalin"><span class="who">lalin</span><p class="bubble">Ugh, this girl</p></article>
+<article class="msg left" data-record="145" data-sender="lalin"><span class="who">lalin</span><p class="bubble">Even when she compliments someone&#x27;s looks, it still can&#x27;t escape being about herself</p></article>
+<article class="msg right" data-record="146" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Well, I am the prettiest</p></article>
+<article class="msg left" data-record="147" data-sender="lalin"><span class="who">lalin</span><p class="bubble">I hope you end up falling for a straight girl</p></article>
+<article class="msg right" data-record="148" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Linnnnn</p></article>
+<article class="msg right" data-record="149" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;ll slap your mouth</p></article>
+<article class="msg left" data-record="150" data-sender="lalin"><span class="who">lalin</span><p class="bubble">5555555555555</p></article>
+<article class="msg left" data-record="151" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">So did the gaydar tingle?</p></article>
+<article class="msg right" data-record="152" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Dunno</p></article>
+<article class="msg right" data-record="153" data-sender="tt’"><span class="who">tt’</span><p class="bubble">All I know is my heart is trembling 🫪</p></article>
+<article class="msg left" data-record="154" data-sender="lalin"><span class="who">lalin</span><p class="bubble">You&#x27;re doomed. A straight girl playing with your heart — baby gay, get ready to die</p></article>
+<article class="msg right" data-record="155" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Are you cursing me, you straight girl?</p></article>
+<article class="msg left" data-record="156" data-sender="lalin"><span class="who">lalin</span><p class="bubble">Yes, I&#x27;m cursing you, ma&#x27;am</p></article>
+<article class="msg right" data-record="157" data-sender="tt’"><span class="who">tt’</span><p class="bubble emoji-only">😡</p></article>
+<article class="msg left" data-record="158" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Totally unhinged</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="159">Unknown Elders (5)</h3>
+<time class="ts" data-record="160">12:18 p.m.</time>
+<article class="msg left" data-record="161" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">P’Pat, we&#x27;re in trouble. Someone edited the URLs to split B2B/B2C and didn&#x27;t tell anyone, since June @Patricia🌻</p></article>
+<article class="msg right" data-record="162" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Oh no, so everything&#x27;s a total mess, then</p></article>
+<article class="msg left" data-record="163" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">Yeah. What do we do?</p></article>
+<article class="msg right" data-record="164" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I&#x27;ll inform P’Duen first</p></article>
+<article class="msg left" data-record="165" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">Thanks for taking care of it</p></article>
+<article class="msg right" data-record="166" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Go have lunch first, you all. I&#x27;ll wait for the kid myself.</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="167">B2B marketing (5)</h3>
+<time class="ts" data-record="168">12:22 p.m.</time>
+<article class="msg right" data-record="169" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">P’Duen, the team has found that web tracking is inaccurate because someone updated the URLs to split B2B/B2C since June without notifying the team in advance. May I ask for your advice, please?@Duen</p></article>
+<article class="msg left" data-record="170" data-sender="Duen"><span class="who">Duen</span><p class="bubble">Why is there a problem like this?</p></article>
+<article class="msg left" data-record="171" data-sender="Duen"><span class="who">Duen</span><p class="bubble">Pat, assess the situation and handle it as appropriate.</p></article>
+<article class="msg right" data-record="172" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Okay.</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="173">JJAPP</h3>
+<time class="ts" data-record="174">12:25 p.m.</time>
+<article class="msg left" data-record="175" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">Just now, your face was so stunned</p></article>
+<article class="msg left" data-record="176" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">Blinking and shaking your head in disbelief</p></article>
+<article class="msg right" data-record="177" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I&#x27;m confused 555555</p></article>
+<article class="msg right" data-record="178" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I went to ask for advice, but they told me to handle it as appropriate</p></article>
+<article class="msg left" data-record="179" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">55555555</p></article>
+<article class="msg left" data-record="180" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">If there&#x27;s anything Japp can help with, just tell me</p></article>
+<article class="msg right" data-record="181" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Okayyy. I&#x27;ll go talk to people first</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="182">B2B marketing (5)</h3>
+<time class="ts" data-record="183">12:47 p.m.</time>
+<article class="msg left" data-record="184" data-sender="Duen"><span class="who">Duen</span><p class="bubble">Wait, Pat, so what will it affect? @Patricia🌻</p></article>
+<article class="msg right" data-record="185" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Still checking right now. As a first step I&#x27;ve ordered the ads paused, since we don&#x27;t know whether the impact will be long-lasting or when it can be fixed.</p></article>
+<p class="receipt" data-record="186">[Read by 4]</p>
+<article class="msg right" data-record="187" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">In that case, Pat will go to a war room with the working team next.</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="188">Unknown Elders (5)</h3>
+<time class="ts" data-record="189">12:52 p.m.</time>
+<article class="msg right" data-record="190" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Is there a problem with work? @Patricia🌻</p></article>
+<article class="msg left" data-record="191" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Yes. What time did you finish on-boarding, Ting? Have you eaten yet?</p></article>
+<article class="msg right" data-record="192" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Haven&#x27;t eaten yet, but I&#x27;m done now</p></article>
+<article class="msg right" data-record="193" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Have you eaten, P’Pat?</p></article>
+<article class="msg left" data-record="194" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Not yet</p></article>
+<article class="msg right" data-record="195" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Can P’Pat wait for me? 🥺</p></article>
+<article class="msg left" data-record="196" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Me?</p></article>
+<article class="msg left" data-record="197" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Can I not wait? I like eating alone.</p></article>
+<p class="receipt" data-record="198">[Read by 4]</p>
+<time class="ts" data-record="199">12:55 p.m.</time>
+<article class="msg left" data-record="200" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">Oh, it went quiet</p></article>
+<article class="msg left" data-record="201" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">P’Pat, don&#x27;t tease the kid</p></article>
+<article class="msg left" data-record="202" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">555555</p></article>
+<article class="msg right" data-record="203" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Tease what?</p></article>
+<article class="msg left" data-record="204" data-sender="JJAPP"><span class="who">JJAPP</span><p class="bubble">She&#x27;s been sitting at her desk working, waiting for Ting. She told us to go ahead ages ago</p></article>
+<article class="msg right" data-record="205" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Oh</p></article>
+<article class="msg right" data-record="206" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Why tease me? I&#x27;m hurt already 😡</p></article>
+<article class="msg left" data-record="207" data-sender="BEll"><span class="who">BEll</span><p class="bubble">The kid is sulking. Definitely sulking</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="208">Patricia🌻</h3>
+<time class="ts" data-record="209">12:57 p.m.</time>
+<article class="msg left" data-record="210" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Are you really hurt?</p></article>
+<article class="msg right" data-record="211" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Really.</p></article>
+<article class="msg right" data-record="212" data-sender="tt’"><span class="who">tt’</span><p class="bubble">But not anymore</p></article>
+<article class="msg left" data-record="213" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Oh. 55555</p></article>
+<article class="msg right" data-record="214" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Just you messaging to ask, and I&#x27;m not hurt anymore</p></article>
+<article class="msg left" data-record="215" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Good, good. Quick to get over a sulk</p></article>
+<article class="msg left" data-record="216" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">How old are you again?</p></article>
+<article class="msg right" data-record="217" data-sender="tt’"><span class="who">tt’</span><p class="bubble">22 🥺</p></article>
+<article class="msg left" data-record="218" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Just graduated, then</p></article>
+<article class="msg right" data-record="219" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Yep yep</p></article>
+<article class="msg left" data-record="220" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Nice, huh</p></article>
+<article class="msg left" data-record="221" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">You look brighter than your years.</p></article>
+<article class="msg right" data-record="222" data-sender="tt’"><span class="who">tt’</span><p class="bubble">You make it sound like Ting is old. I&#x27;m still young, of course I&#x27;m bright</p></article>
+<article class="msg left" data-record="223" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">55555</p></article>
+<article class="msg left" data-record="224" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Actually, 22 is already grown up, you know</p></article>
+<article class="msg right" data-record="225" data-sender="tt’"><span class="who">tt’</span><p class="bubble">And how old are you, P’Pat?</p></article>
+<article class="msg left" data-record="226" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">28.</p></article>
+<article class="msg right" data-record="227" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Nice</p></article>
+<article class="msg left" data-record="228" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">What&#x27;s nice?</p></article>
+<article class="msg right" data-record="229" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Perfectly beautiful for your age 🫪</p></article>
+<article class="msg left" data-record="230" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Flattering me because you&#x27;re afraid of having nobody to eat lunch with, aren&#x27;t you?</p></article>
+<article class="msg right" data-record="231" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Noooo</p></article>
+<article class="msg right" data-record="232" data-sender="tt’"><span class="who">tt’</span><p class="bubble">You&#x27;re really pretty, really, really, really</p></article>
+<article class="msg right" data-record="233" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;m already walking back. Wait for me, okay</p></article>
+<article class="msg left" data-record="234" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Okay.</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="235">B2B marketing (5)</h3>
+<p class="event" data-record="236">Patricia🌻 added tt’ to the group.</p>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="237">B2B marketing (6)</h3>
+<time class="ts" data-record="238">1:14 p.m.</time>
+<article class="msg left" data-record="239" data-sender="Duen"><span class="who">Duen</span><p class="bubble">Pat, please go summarize the web tracking error. @Patricia🌻</p></article>
+<article class="msg left" data-record="240" data-sender="Duen"><span class="who">Duen</span><p class="bubble">Put all the information together and post it in the big group, so everyone else is informed too</p></article>
+<article class="msg left" data-record="241" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">One moment, P’Duen. Pat just came out for lunch and will hurry back to send the summary.</p></article>
+<article class="msg left" data-record="242" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">But as a first step, there&#x27;s already been a war room with the working team, and the working team has acknowledged it and is fixing it.</p></article>
+<article class="msg left" data-record="243" data-sender="Duen"><span class="who">Duen</span><p class="bubble">It&#x27;s past one o&#x27;clock. Why haven&#x27;t you come back to work yet?</p></article>
+<article class="msg right" data-record="244" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Ting asked P’Pat to wait and have lunch together with Ting. Ting only finished on-boarding around one o&#x27;clock, so it ate into P’Pat&#x27;s work time. My apologies, P’Duen.</p></article>
+<article class="msg left" data-record="245" data-sender="Duen"><span class="who">Duen</span><p class="bubble">Oh, looking after Ting. Okay. When you&#x27;re done, hurry up and take care of it for me then. @Patricia🌻</p></article>
+<article class="msg left" data-record="246" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Okay.</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="247">prettybabies (3)</h3>
+<time class="ts" data-record="248">1:25 p.m.</time>
+<article class="msg right" data-record="249" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I don&#x27;t like my boss at all</p></article>
+<article class="msg right" data-record="250" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Can I get her fired?</p></article>
+<article class="msg left" data-record="251" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Ting, honestly, how many days will you survive? I pity Papa and Mama</p></article>
+<article class="msg right" data-record="252" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I almost have to eat rice through my nose because P’Pat rushed back to work</p></article>
+<article class="msg right" data-record="253" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Why does P’Pat have to work that hard? I feel for the beautiful older sister 🫠</p></article>
+<article class="msg left" data-record="254" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Oh, so the beautiful older sister is named Pat</p></article>
+<article class="msg right" data-record="255" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;ve never rushed for anyone before. What has P’Pat done to me</p></article>
+<article class="msg left" data-record="256" data-sender="lalin"><span class="who">lalin</span><p class="bubble">Is P’Pat toying with the baby gay&#x27;s heart?</p></article>
+<article class="msg right" data-record="257" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;d let her play with it</p></article>
+<article class="msg left" data-record="258" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">This one&#x27;s got it bad</p></article>
+<article class="msg right" data-record="259" data-sender="tt’"><span class="who">tt’</span><p class="bubble">What do you mean &quot;this one&quot;? There&#x27;s only one</p></article>
+<article class="msg right" data-record="260" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;ve never liked anyone in my whole life except P’Pat</p></article>
+<article class="msg left" data-record="261" data-sender="lalin"><span class="who">lalin</span><p class="bubble">Get ready to collect her body too. She&#x27;s lost it. Going like this, she&#x27;s in for a serious hurt @font_pcp</p></article>
+<article class="msg right" data-record="262" data-sender="tt’"><span class="who">tt’</span><p class="bubble">She might be gay too, right?</p></article>
+<article class="msg right" data-record="263" data-sender="tt’"><span class="who">tt’</span><p class="bubble">You should&#x27;ve seen her smile looking at me. So gay. I&#x27;m sure she has feelings</p></article>
+<article class="msg left" data-record="264" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">She&#x27;s gay or you&#x27;re gay?</p></article>
+<article class="msg right" data-record="265" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Both</p></article>
+<article class="msg right" data-record="266" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Hold on, let me keep complaining first</p></article>
+<article class="msg right" data-record="267" data-sender="tt’"><span class="who">tt’</span><p class="bubble">So annoyed. I wasn&#x27;t in the group at first, but when P’Pat got pinged I asked to borrow her phone and read it right then</p></article>
+<article class="msg right" data-record="268" data-sender="tt’"><span class="who">tt’</span><p class="bubble">When it happened, the boss didn&#x27;t seem to care at all, just threw it all to P’Pat to do alone. Can you believe it?</p></article>
+<article class="msg right" data-record="269" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Not only did she leave P’Pat to handle it herself, she gave no time to work on it either. Found out about the problem at half past noon, and only near afternoon remembered she had to come ask about the impact, and then read the reply without answering, too. Then after one o&#x27;clock she comes asking her to go do the summary</p></article>
+<article class="msg right" data-record="270" data-sender="tt’"><span class="who">tt’</span><p class="bubble">And then she goes and snaps that it&#x27;s past one and P’Pat still hasn&#x27;t come back to work. Like, when was P’Pat supposed to eat first?</p></article>
+<article class="msg right" data-record="271" data-sender="tt’"><span class="who">tt’</span><p class="bubble">And through all of this, what has she done besides order P’Pat around? She should be the one proposing solutions</p></article>
+<article class="msg right" data-record="272" data-sender="tt’"><span class="who">tt’</span><p class="bubble">She really should be fired. Don&#x27;t get too crazy, Duen.</p></article>
+<article class="msg left" data-record="273" data-sender="lalin"><span class="who">lalin</span><p class="bubble">Ting collects a ridiculous amount of data</p></article>
+<article class="msg left" data-record="274" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Yeah, she&#x27;s starting. Real work mode is on</p></article>
+<article class="msg left" data-record="275" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">And Duen is the boss?</p></article>
+<article class="msg right" data-record="276" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Yeah. I&#x27;ll tell Auntie Ying</p></article>
+<article class="msg left" data-record="277" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Duen&#x27;s been knocked down to friend status now</p></article>
+<article class="msg left" data-record="278" data-sender="lalin"><span class="who">lalin</span><p class="bubble">Don&#x27;t abuse your power</p></article>
+<article class="msg right" data-record="279" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;m furious! Why pick on P’Pat 😡</p></article>
+<article class="msg right" data-record="280" data-sender="tt’"><span class="who">tt’</span><p class="bubble">&quot;Past one and still not at work?&quot; Hmph. I&#x27;ll just order the lunch break changed to 1:00–2:00 p.m. then</p></article>
+<article class="msg right" data-record="281" data-sender="tt’"><span class="who">tt’</span><p class="bubble">And seriously, who fixes lunch break times that strictly? Is she a school discipline teacher? 🤬</p></article>
+<article class="msg left" data-record="282" data-sender="lalin"><span class="who">lalin</span><p class="bubble">Is this the thing</p></article>
+<article class="msg left" data-record="283" data-sender="lalin"><span class="who">lalin</span><p class="bubble">that P’Claire finds cute</p></article>
+<article class="msg left" data-record="284" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">5555555555555</p></article>
+<article class="msg left" data-record="285" data-sender="lalin"><span class="who">lalin</span><p class="bubble">I don&#x27;t understand P’Claire at all</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="286">khim09</h3>
+<time class="ts" data-record="287">2:02 p.m.</time>
+<article class="msg right" data-record="288" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">The new kid is hilarious 555555</p></article>
+<article class="msg left" data-record="289" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Why? At first you still wanted to complain</p></article>
+<article class="msg right" data-record="290" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">No complaining. Pat never complains, Khim.</p></article>
+<article class="msg right" data-record="291" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">And there really was no need to complain, see?</p></article>
+<article class="msg left" data-record="292" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Is the kid a fun one? Can she hype you up?</p></article>
+<article class="msg right" data-record="293" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Sat there with a face sour as a baby&#x27;s butt, determined to fight P’Duen over something that isn&#x27;t even her own business 555555</p></article>
+<article class="msg left" data-record="294" data-sender="khim09"><span class="who">khim09</span><p class="bubble">If it&#x27;s about that P’Duen, let the kid fight her. That one is overdue for a comeuppance</p></article>
+<article class="msg right" data-record="295" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">55555555</p></article>
+<article class="msg right" data-record="296" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">She&#x27;s just like that. Taking it to heart only makes me miserable. Better to see it as a joke</p></article>
+<article class="msg left" data-record="297" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Tell me something, will you</p></article>
+<article class="msg left" data-record="298" data-sender="khim09"><span class="who">khim09</span><p class="bubble">How do you stay happy with your miserable life?</p></article>
+<article class="msg left" data-record="299" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Give me some how to appreciate the world</p></article>
+<article class="msg left" data-record="300" data-sender="khim09"><span class="who">khim09</span><p class="bubble">All day long you&#x27;re so good at finding things to entertain yourself</p></article>
+<article class="msg right" data-record="301" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Being miserable gets me nothing anyway</p></article>
+<article class="msg right" data-record="302" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I&#x27;ve got food to eat, a home to live in, a mom waiting for me to come home to</p></article>
+<article class="msg right" data-record="303" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I don’t see any reason to be so miserable 🙂</p></article>
+<article class="msg left" data-record="304" data-sender="khim09"><span class="who">khim09</span><p class="bubble">You know what</p></article>
+<article class="msg left" data-record="305" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Your soul is too old friend</p></article>
+<article class="msg right" data-record="306" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">LOL</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="307">Patricia🌻</h3>
+<time class="ts" data-record="308">2:11 p.m.</time>
+<article class="msg left" data-record="309" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Still haven&#x27;t dropped the scowl?</p></article>
+<article class="msg right" data-record="310" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Not until P’Duen gets up and goes somewhere else</p></article>
+<article class="msg left" data-record="311" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">She&#x27;s not going anywhere. She sits working till evening every day</p></article>
+<article class="msg right" data-record="312" data-sender="tt’"><span class="who">tt’</span><p class="bubble emoji-only">😡</p></article>
+<article class="msg left" data-record="313" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">What are you so angry about?</p></article>
+<article class="msg left" data-record="314" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I&#x27;m the one who got scolded, you know. Ting didn&#x27;t get scolded at all</p></article>
+<article class="msg right" data-record="315" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Then let her try scolding me</p></article>
+<article class="msg right" data-record="316" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;ll tell Papa for sure</p></article>
+<article class="msg left" data-record="317" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">5555555</p></article>
+<article class="msg left" data-record="318" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Stop. Slowly forget about it</p></article>
+<article class="msg right" data-record="319" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Can&#x27;t forget it</p></article>
+<article class="msg right" data-record="320" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I don&#x27;t see her doing anything at all, just ordering P’Pat to do it</p></article>
+<article class="msg left" data-record="321" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">She has a lot on her hands, you know. She takes on lots of work from the higher-ups, work that has nothing to do with the team</p></article>
+<article class="msg right" data-record="322" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I want to help P’Pat with work too. Tell Ting what needs to be done</p></article>
+<article class="msg left" data-record="323" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Tell yourself that it&#x27;s nothing important, just a small thing that&#x27;s already passed</p></article>
+<article class="msg left" data-record="324" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">What matters right now is that I need to get on with my work</p></article>
+<article class="msg right" data-record="325" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Am I bothering you, P’Pat?</p></article>
+<article class="msg left" data-record="326" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Yes. I need to hurry with work now.</p></article>
+<article class="msg left" data-record="327" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">If Ting keeps breathing this loudly, Japp and the others will tease you about wild boar breathing, just like P’Duen</p></article>
+<article class="msg right" data-record="328" data-sender="tt’"><span class="who">tt’</span><p class="bubble">That&#x27;s ugly</p></article>
+<article class="msg left" data-record="329" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">So hold it together for now.</p></article>
+<article class="msg right" data-record="330" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Hup</p></article>
+<article class="msg left" data-record="331" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Very good</p></article>
+<article class="msg right" data-record="332" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Can&#x27;t hold it</p></article>
+<article class="msg left" data-record="333" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">5555555</p></article>
+<article class="msg left" data-record="334" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Hup again, quick</p></article>
+<article class="msg right" data-record="335" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Hup 😡</p></article>
+<article class="msg left" data-record="336" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Got it yet?</p></article>
+<article class="msg right" data-record="337" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Fine, fine 🫠</p></article>
+<article class="msg left" data-record="338" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I&#x27;ll tell you later what happened. Let me get free first</p></article>
+<article class="msg right" data-record="339" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Okay. I can always wait</p></article>
+<article class="msg right" data-record="340" data-sender="tt’"><span class="who">tt’</span><p class="bubble">But you already posted the summary in the big group, didn&#x27;t you?</p></article>
+<article class="msg left" data-record="341" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Right</p></article>
+<article class="msg right" data-record="342" data-sender="tt’"><span class="who">tt’</span><p class="bubble">You can do it, P’Pat, okay 🥺</p></article>
+<article class="msg right" data-record="343" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I also need to pick up equipment from IT. I was so busy being angry I forgot</p></article>
+<article class="msg left" data-record="344" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">55555</p></article>
+<article class="msg left" data-record="345" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Do you know how to get there?</p></article>
+<article class="msg right" data-record="346" data-sender="tt’"><span class="who">tt’</span><p class="bubble">If I don&#x27;t, will you go with me?</p></article>
+<article class="msg left" data-record="347" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">No. I&#x27;ll have Bell take you</p></article>
+<article class="msg right" data-record="348" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Then I know how to go 😡</p></article>
+<article class="msg left" data-record="349" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">55555</p></article>
+<article class="msg right" data-record="350" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Keep working. I won&#x27;t bother you anymore</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="351">B2B marketing (6)</h3>
+<time class="ts" data-record="352">4:47 p.m.</time>
+<article class="msg left" data-record="353" data-sender="Duen"><span class="who">Duen</span><p class="bubble">Let Nong Ting look at the new product, okay. Pat, please stick with her. @Patricia🌻 @tt’</p></article>
+<article class="msg left" data-record="354" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Okay.</p></article>
+<article class="msg right" data-record="355" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Understood.</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="356">Patricia🌻</h3>
+<time class="ts" data-record="357">4:54 p.m.</time>
+<article class="msg left" data-record="358" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I&#x27;ll tell you what you need to do. For now you can still wait</p></article>
+<article class="msg right" data-record="359" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Okay</p></article>
+<article class="msg right" data-record="360" data-sender="tt’"><span class="who">tt’</span><p class="bubble">P’Pat owes me two things now</p></article>
+<article class="msg left" data-record="361" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">5555</p></article>
+<article class="msg left" data-record="362" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Not free yet, huh. Sorry</p></article>
+<article class="msg right" data-record="363" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I leave at six, so if we can&#x27;t talk in time, you can message me outside work hours anytime</p></article>
+<article class="msg right" data-record="364" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Ready to reply 24/7</p></article>
+<article class="msg right" data-record="365" data-sender="tt’"><span class="who">tt’</span><p class="bubble">If I reply slowly, just call me</p></article>
+<article class="msg left" data-record="366" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Isn&#x27;t that too much?</p></article>
+<article class="msg right" data-record="367" data-sender="tt’"><span class="who">tt’</span><p class="bubble">555555</p></article>
+<article class="msg left" data-record="368" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">So diligent</p></article>
+<article class="msg right" data-record="369" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Right? I&#x27;m a diligent person</p></article>
+<article class="msg left" data-record="370" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Too diligent, maybe?</p></article>
+<article class="msg right" data-record="371" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Seeing P’Pat being diligent makes me want to be diligent too</p></article>
+<article class="msg left" data-record="372" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Really?</p></article>
+<article class="msg right" data-record="373" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Not really. I just want to help P’Pat with work</p></article>
+<article class="msg right" data-record="374" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I see you not getting any rest at all</p></article>
+<article class="msg left" data-record="375" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Soon Ting won&#x27;t get any rest either.</p></article>
+<article class="msg right" data-record="376" data-sender="tt’"><span class="who">tt’</span><p class="bubble">And when was I ever scared?</p></article>
+<article class="msg right" data-record="377" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Throw the work at me!</p></article>
+<article class="msg right" data-record="378" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Worst case, I just quit</p></article>
+<article class="msg left" data-record="379" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">55555</p></article>
+<article class="msg left" data-record="380" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">First go sit and hup about P’Duen, you.</p></article>
+<article class="msg right" data-record="381" data-sender="tt’"><span class="who">tt’</span><p class="bubble emoji-only">😒</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="382">Family 🏠 (3)</h3>
+<time class="ts" data-record="383">5:03 p.m.</time>
+<article class="msg right" data-record="384" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Papa</p></article>
+<article class="msg right" data-record="385" data-sender="tt’"><span class="who">tt’</span><p class="bubble">How much does the person named Duen get paid?</p></article>
+<article class="msg left" data-record="386" data-sender="Papa"><span class="who">Papa</span><p class="bubble">Why do you want to know about her?</p></article>
+<article class="msg right" data-record="387" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Cut her salary in half and give it to P’Pat 😡</p></article>
+<article class="msg left" data-record="388" data-sender="Papa"><span class="who">Papa</span><p class="bubble">I sent you to work, not to make enemies</p></article>
+<article class="msg right" data-record="389" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;ll hurry up and get really good at work and take that old lady Duen&#x27;s position, and show Papa</p></article>
+<article class="msg right" data-record="390" data-sender="tt’"><span class="who">tt’</span><p class="bubble">From what I can see, it doesn&#x27;t seem to need much ability anyway 🤬</p></article>
+<article class="msg left" data-record="391" data-sender="Mama"><span class="who">Mama</span><p class="bubble">I don&#x27;t know how you raised this child, dear</p></article>
+<article class="msg left" data-record="392" data-sender="Papa"><span class="who">Papa</span><p class="bubble">Me?</p></article>
+<article class="msg left" data-record="393" data-sender="Mama"><span class="who">Mama</span><p class="bubble">Well, she&#x27;s your child</p></article>
+<article class="msg left" data-record="394" data-sender="Papa"><span class="who">Papa</span><p class="bubble">Isn&#x27;t she your child too?</p></article>
+<article class="msg right" data-record="395" data-sender="tt’"><span class="who">tt’</span><p class="bubble">No need to argue. It&#x27;s both Papa and Mama who raised me like this!!</p></article>
+<article class="msg left" data-record="396" data-sender="Papa"><span class="who">Papa</span><p class="bubble emoji-only">🤣</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="397">Patricia🌻</h3>
+<time class="ts" data-record="398">6:04 p.m.</time>
+<article class="msg right" data-record="399" data-sender="tt’"><span class="who">tt’</span><p class="bubble">What time are you heading home, P’Pat?</p></article>
+<article class="msg left" data-record="400" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Probably around six thirty</p></article>
+<article class="msg right" data-record="401" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Traffic&#x27;s awful</p></article>
+<article class="msg left" data-record="402" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I take the BTS and then a motorbike taxi.</p></article>
+<article class="msg right" data-record="403" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Oh, you don&#x27;t drive yourself?</p></article>
+<article class="msg left" data-record="404" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">No, I don&#x27;t have a car</p></article>
+<article class="msg right" data-record="405" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Oh</p></article>
+<article class="msg left" data-record="406" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">And how do you get home, Ting? I saw you get up right at six</p></article>
+<article class="msg right" data-record="407" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;m punctual, you know</p></article>
+<article class="msg left" data-record="408" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">But you came to work late</p></article>
+<article class="msg right" data-record="409" data-sender="tt’"><span class="who">tt’</span><p class="bubble">The first day doesn&#x27;t count 🙂‍↔️</p></article>
+<article class="msg left" data-record="410" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">555555</p></article>
+<article class="msg right" data-record="411" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Someone picks me up. I&#x27;m already in the car</p></article>
+<article class="msg right" data-record="412" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Morning and evening traffic, so boring, P’Pat 😡</p></article>
+<article class="msg right" data-record="413" data-sender="tt’"><span class="who">tt’</span><p class="bubble">By the time I get home, and then I have to wake up early for work again</p></article>
+<article class="msg right" data-record="414" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;m basically living on the road now</p></article>
+<article class="msg left" data-record="415" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I&#x27;ll talk with you later, okay</p></article>
+<article class="msg right" data-record="416" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;m bothering you again 🫠</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="417">prettybabies (3)</h3>
+<time class="ts" data-record="418">7:36 p.m.</time>
+<article class="msg right" data-record="419" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Just got home</p></article>
+<article class="msg left" data-record="420" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">P’Japp isn&#x27;t home yet</p></article>
+<article class="msg left" data-record="421" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">You left early?</p></article>
+<article class="msg right" data-record="422" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Yeah, six on the dot and I was up. Wasn&#x27;t staying</p></article>
+<article class="msg left" data-record="423" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">P’Sita&#x27;s more tired than before, huh. Pick-ups and drop-offs every day</p></article>
+<article class="msg right" data-record="424" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;m tired too</p></article>
+<article class="msg right" data-record="425" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Even rushing home, it takes an hour and a half. Can&#x27;t take it</p></article>
+<article class="msg left" data-record="426" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Well, a bit tired</p></article>
+<article class="msg right" data-record="427" data-sender="tt’"><span class="who">tt’</span><p class="bubble">But P’Pat is the most tired 😔</p></article>
+<article class="msg left" data-record="428" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Not worried about herself anymore, only worried about the beautiful older sister</p></article>
+<article class="msg left" data-record="429" data-sender="lalin"><span class="who">lalin</span><p class="bubble">Have you told P’Claire yet?</p></article>
+<article class="msg right" data-record="430" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Why would I?</p></article>
+<article class="msg left" data-record="431" data-sender="lalin"><span class="who">lalin</span><p class="bubble">So sad. She nurtured you for how many years, and the moment you leave her embrace you go push toward another beautiful older sister instead</p></article>
+<article class="msg right" data-record="432" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I never liked her like that</p></article>
+<article class="msg left" data-record="433" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Even though she&#x27;s the ultimate gay, you can smell it just from her breathing, yet you chose to ignore her</p></article>
+<article class="msg right" data-record="434" data-sender="tt’"><span class="who">tt’</span><p class="bubble">These things are about the heart</p></article>
+<article class="msg right" data-record="435" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Go on, ask me where my heart is</p></article>
+<article class="msg left" data-record="436" data-sender="lalin"><span class="who">lalin</span><p class="bubble">We could ask, but we won&#x27;t</p></article>
+<article class="msg right" data-record="437" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Fon, ask me</p></article>
+<article class="msg left" data-record="438" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">I&#x27;m getting a headache</p></article>
+<article class="msg right" data-record="439" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Fonnnn</p></article>
+<article class="msg left" data-record="440" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">So where&#x27;s your heart?</p></article>
+<article class="msg right" data-record="441" data-sender="tt’"><span class="who">tt’</span><p class="bubble">With P’Pat 🫪</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="442">khim09</h3>
+<time class="ts" data-record="443">7:41 p.m.</time>
+<article class="msg right" data-record="444" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Mom asked me today how work is going</p></article>
+<article class="msg right" data-record="445" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">So I told her there&#x27;s a new kid, but she&#x27;s the owner&#x27;s child</p></article>
+<article class="msg right" data-record="446" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Mom said that&#x27;s good, even with such rich parents she still knows how to earn a living</p></article>
+<article class="msg left" data-record="447" data-sender="khim09"><span class="who">khim09</span><p class="bubble">That alone is already good</p></article>
+<article class="msg left" data-record="448" data-sender="khim09"><span class="who">khim09</span><p class="bubble">If that counts as good, then your mom&#x27;s kid would be a maharani by now, ma&#x27;am</p></article>
+<article class="msg left" data-record="449" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Everyone has to know how to earn a living by default, Mom</p></article>
+<article class="msg right" data-record="450" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">5555555</p></article>
+<article class="msg right" data-record="451" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Born differently, so the standards are different, huh</p></article>
+<article class="msg left" data-record="452" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Here, I&#x27;m giving you the chance to complain</p></article>
+<article class="msg left" data-record="453" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Anything miserable at all?</p></article>
+<article class="msg right" data-record="454" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I&#x27;m not complaining, okay?</p></article>
+<article class="msg left" data-record="455" data-sender="khim09"><span class="who">khim09</span><p class="bubble">You&#x27;ve been complaining since you started telling me about your mom</p></article>
+<article class="msg left" data-record="456" data-sender="khim09"><span class="who">khim09</span><p class="bubble">I can hear your bitterness ja</p></article>
+<article class="msg right" data-record="457" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">55555555</p></article>
+<article class="msg right" data-record="458" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">How terrible</p></article>
+<article class="msg left" data-record="459" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Pat, you&#x27;re a human. If you feel something, you have to feel it. Sitting there suppressing it doesn&#x27;t make you look any happier.</p></article>
+<article class="msg right" data-record="460" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Other people don&#x27;t know</p></article>
+<article class="msg right" data-record="461" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Only you know</p></article>
+<article class="msg left" data-record="462" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Are you tired these days?</p></article>
+<article class="msg right" data-record="463" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Of course I&#x27;m tired</p></article>
+<article class="msg right" data-record="464" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">But I&#x27;m happy, Khim. Really</p></article>
+<article class="msg left" data-record="465" data-sender="khim09"><span class="who">khim09</span><p class="bubble">I know, but you can complain a little</p></article>
+<article class="msg left" data-record="466" data-sender="khim09"><span class="who">khim09</span><p class="bubble">If you run into something worth cursing, go ahead and curse. Feeling a bit sorry for your own fate isn&#x27;t wrong either</p></article>
+<article class="msg right" data-record="467" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">It&#x27;s nothing, really. Just, when I found out the kid is 22, I thought, how nice, her life</p></article>
+<article class="msg right" data-record="468" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">She seems so bright. Even little things she treats as big things</p></article>
+<article class="msg right" data-record="469" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">She even has someone to drive her to and from work. Such a kiddo. Total baby</p></article>
+<article class="msg left" data-record="470" data-sender="khim09"><span class="who">khim09</span><p class="bubble">It had to be 22, didn&#x27;t it</p></article>
+<article class="msg left" data-record="471" data-sender="khim09"><span class="who">khim09</span><p class="bubble">See? You&#x27;re bitter</p></article>
+<article class="msg right" data-record="472" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Fine, I was bitter</p></article>
+<article class="msg right" data-record="473" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">But I just didn’t want to hold on to any grudges you know</p></article>
+<article class="msg right" data-record="474" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">They’d eat me up inside</p></article>
+<article class="msg left" data-record="475" data-sender="khim09"><span class="who">khim09</span><p class="bubble">They will eat you up inside if you act like nothing happened</p></article>
+<article class="msg right" data-record="476" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Alright</p></article>
+<article class="msg right" data-record="477" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">It happened</p></article>
+<article class="msg right" data-record="478" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">It happened when I was 22</p></article>
+<article class="msg right" data-record="479" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">It happened again when I was 24</p></article>
+<article class="msg right" data-record="480" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">But I managed to get through it</p></article>
+<article class="msg right" data-record="481" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Now I&#x27;m 28 and my life is really fine okay?</p></article>
+<article class="msg right" data-record="482" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">NO BITTERNESS I SWEAR!!</p></article>
+<article class="msg left" data-record="483" data-sender="khim09"><span class="who">khim09</span><p class="bubble">55555555</p></article>
+<article class="msg left" data-record="484" data-sender="khim09"><span class="who">khim09</span><p class="bubble">The only part I won&#x27;t believe is the last sentence</p></article>
+<article class="msg right" data-record="485" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">5555555</p></article>
+<article class="msg right" data-record="486" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Seriously. Today I came home and Mom had made kaeng som waiting for me. Just that already feels lucky</p></article>
+<article class="msg left" data-record="487" data-sender="khim09"><span class="who">khim09</span><p class="bubble">I love your mom&#x27;s cooking the most</p></article>
+<article class="msg right" data-record="488" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Right</p></article>
+<article class="msg left" data-record="489" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Why hasn&#x27;t my wife followed that example yet</p></article>
+<article class="msg right" data-record="490" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">5555555</p></article>
+<article class="msg right" data-record="491" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I told Mom and she laughed</p></article>
+<article class="msg right" data-record="492" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Mom said to call you and Nong Chan over to the house, she&#x27;ll cook for you</p></article>
+<article class="msg left" data-record="493" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Dear Mom~</p></article>
+<article class="msg right" data-record="494" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Such a suck-up, Khim</p></article>
+<article class="msg left" data-record="495" data-sender="khim09"><span class="who">khim09</span><p class="bubble">When it comes to charming women, leave it to me. P’Khim is a pro</p></article>
+<article class="msg left" data-record="496" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Don&#x27;t believe me? Ask Nong Chan. Charmed her until we ended up paired up</p></article>
+<article class="msg right" data-record="497" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Disgusting</p></article>
+<article class="msg left" data-record="498" data-sender="khim09"><span class="who">khim09</span><p class="bubble">55555555</p></article>
+<article class="msg left" data-record="499" data-sender="khim09"><span class="who">khim09</span><p class="bubble">You should get ready to butter up the new kid too, in case you get inner-circle connections for a promotion</p></article>
+<article class="msg right" data-record="500" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I thought it was &quot;in case I get paired up&quot;</p></article>
+<article class="msg left" data-record="501" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Oh, Pat</p></article>
+<article class="msg left" data-record="502" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Go on, pair up and let me watch, okay</p></article>
+<article class="msg left" data-record="503" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Ching-chap, ching-chap — go on, try it</p></article>
+<article class="msg right" data-record="504" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">5555555</p></article>
+<article class="msg right" data-record="505" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Right, forgot I still owe the kid. I&#x27;m going to talk work with her first</p></article>
+<article class="msg left" data-record="506" data-sender="khim09"><span class="who">khim09</span><p class="bubble">I told you to butter her up, not go work</p></article>
+<article class="msg left" data-record="507" data-sender="khim09"><span class="who">khim09</span><p class="bubble">Hey Pat, get back here</p></article>
+<article class="msg right" data-record="508" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Too late 555555</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="509">Patricia🌻</h3>
+<time class="ts" data-record="510">8:03 p.m.</time>
+<article class="msg left" data-record="511" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Can I really talk to you outside work hours?</p></article>
+<article class="msg left" data-record="512" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Or we can talk tomorrow</p></article>
+<article class="msg right" data-record="513" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Really, we can talk</p></article>
+<article class="msg right" data-record="514" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I thought you&#x27;d forgotten</p></article>
+<article class="msg left" data-record="515" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Actually, I had forgotten</p></article>
+<article class="msg right" data-record="516" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Oh. I&#x27;m mad 😠</p></article>
+<article class="msg left" data-record="517" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">555555</p></article>
+<article class="msg left" data-record="518" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">But I still remembered, didn&#x27;t I? So I&#x27;m guilty, but not one hundred percent</p></article>
+<article class="msg right" data-record="519" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I can forgive you</p></article>
+<article class="msg left" data-record="520" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">So easy</p></article>
+<article class="msg left" data-record="521" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Quick to stop sulking, quick to stop being angry</p></article>
+<article class="msg right" data-record="522" data-sender="tt’"><span class="who">tt’</span><p class="bubble">That&#x27;s because it&#x27;s P’Pat</p></article>
+<article class="msg left" data-record="523" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">You&#x27;re funny. Talking like we&#x27;re close. You&#x27;ve only known me for one day</p></article>
+<article class="msg right" data-record="524" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I get along with people easily</p></article>
+<article class="msg left" data-record="525" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Then let me see you get along with P’Duen</p></article>
+<article class="msg right" data-record="526" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Are you teasing me? 😡</p></article>
+<article class="msg left" data-record="527" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">555555</p></article>
+<article class="msg left" data-record="528" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Well, you&#x27;re teasable</p></article>
+<article class="msg left" data-record="529" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">A little thing and your face is already sour and scowling</p></article>
+<article class="msg right" data-record="530" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;m not good at hiding my face 🫠</p></article>
+<article class="msg left" data-record="531" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">But you&#x27;ll have to hide it a bit, okay, at work</p></article>
+<article class="msg left" data-record="532" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Do I sound like I&#x27;m teaching? No offence, okay, I just want to give you some advice</p></article>
+<article class="msg right" data-record="533" data-sender="tt’"><span class="who">tt’</span><p class="bubble">P’Pat can teach me anything. I&#x27;m a half-full glass of water</p></article>
+<article class="msg right" data-record="534" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Teach me lots. I like it</p></article>
+<article class="msg left" data-record="535" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">55555</p></article>
+<article class="msg left" data-record="536" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Okay then, let&#x27;s talk about work so you can go rest soon, right?</p></article>
+<article class="msg right" data-record="537" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;m not in a rush</p></article>
+<article class="msg left" data-record="538" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">But I am</p></article>
+<article class="msg right" data-record="539" data-sender="tt’"><span class="who">tt’</span><p class="bubble">P’Pat 😡</p></article>
+<article class="msg left" data-record="540" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">5555555</p></article>
+<article class="msg left" data-record="541" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Not in a rush? You have to wake up early for work again</p></article>
+<article class="msg right" data-record="542" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;ll sleep in the car</p></article>
+<article class="msg right" data-record="543" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I can talk till three a.m. today</p></article>
+<article class="msg left" data-record="544" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Wait, wait, ask me first</p></article>
+<article class="msg left" data-record="545" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I can&#x27;t sit and sleep on a motorbike</p></article>
+<article class="msg right" data-record="546" data-sender="tt’"><span class="who">tt’</span><p class="bubble">You commute by yourself every day?</p></article>
+<article class="msg left" data-record="547" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Yes.</p></article>
+<article class="msg right" data-record="548" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Tiring?</p></article>
+<article class="msg left" data-record="549" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Tiring, but I&#x27;m used to it. My home isn&#x27;t that far either, 30–40 minutes.</p></article>
+<article class="msg right" data-record="550" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Where&#x27;s your home, P’Pat?</p></article>
+<article class="msg left" data-record="551" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Bang Chak. Do you know it?</p></article>
+<article class="msg right" data-record="552" data-sender="tt’"><span class="who">tt’</span><p class="bubble">No</p></article>
+<article class="msg right" data-record="553" data-sender="tt’"><span class="who">tt’</span><p class="bubble">My house is on Sukhumvit</p></article>
+<article class="msg left" data-record="554" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I haven&#x27;t asked yet</p></article>
+<article class="msg right" data-record="555" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Afraid you wouldn&#x27;t ask, so I hurried to say it first 😠</p></article>
+<article class="msg left" data-record="556" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">555555</p></article>
+<article class="msg left" data-record="557" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Are you angry at everything in the world?</p></article>
+<article class="msg right" data-record="558" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;m irritable</p></article>
+<article class="msg right" data-record="559" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Many people say so, but it depends whether P’Pat believes it</p></article>
+<article class="msg left" data-record="560" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I believe it. The P’Duen thing today made it even clearer</p></article>
+<article class="msg left" data-record="561" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I didn&#x27;t like it either. It&#x27;s not that I felt nothing. But we have to understand it&#x27;s work</p></article>
+<article class="msg left" data-record="562" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">You get angry and then you have to get over it so you can keep working. Otherwise you&#x27;ll end up like you, forgetting to go to IT</p></article>
+<article class="msg right" data-record="563" data-sender="tt’"><span class="who">tt’</span><p class="bubble">That&#x27;s why you taught me to hup, right?</p></article>
+<article class="msg left" data-record="564" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Yes. I can hup myself ten times a day</p></article>
+<article class="msg right" data-record="565" data-sender="tt’"><span class="who">tt’</span><p class="bubble">555555</p></article>
+<article class="msg right" data-record="566" data-sender="tt’"><span class="who">tt’</span><p class="bubble">P’Pat has such high EQ</p></article>
+<article class="msg right" data-record="567" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Ting must become a lot calmer</p></article>
+<article class="msg left" data-record="568" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">55555</p></article>
+<article class="msg left" data-record="569" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Hup it</p></article>
+<article class="msg left" data-record="570" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">No matter what happens</p></article>
+<article class="msg right" data-record="571" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Hup</p></article>
+<article class="msg right" data-record="572" data-sender="tt’"><span class="who">tt’</span><p class="bubble emoji-only">😡</p></article>
+<article class="msg left" data-record="573" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">We&#x27;re talking work now</p></article>
+<article class="msg right" data-record="574" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Hup</p></article>
+<article class="msg right" data-record="575" data-sender="tt’"><span class="who">tt’</span><p class="bubble emoji-only">🤬</p></article>
+<article class="msg left" data-record="576" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Your mouth says hup, but you can&#x27;t keep the look off your face at all</p></article>
+<article class="msg right" data-record="577" data-sender="tt’"><span class="who">tt’</span><p class="bubble">555555555555</p></article>
+<article class="msg right" data-record="578" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Come on, let&#x27;s talk work. So P’Pat can rest soon</p></article>
+<article class="msg left" data-record="579" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Let&#x27;s start with today&#x27;s problem. Roughly: someone changed the URLs we use to separate B2B/B2C and didn&#x27;t tell the team</p></article>
+<article class="msg right" data-record="580" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Oh, Ting went and read about this in the big group. So, when a customer clicks a URL tagged with UTM /packages, the system redirects to B2C instead</p></article>
+<article class="msg right" data-record="581" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Then the UTM gets dropped, so we can&#x27;t tell the source attribution for our side. Even if traffic comes in, we can&#x27;t separate it</p></article>
+<article class="msg left" data-record="582" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Exactly. Good job</p></article>
+<article class="msg right" data-record="583" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Even though my face looks dumb, I&#x27;m secretly a little smart</p></article>
+<article class="msg left" data-record="584" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">555555</p></article>
+<article class="msg left" data-record="585" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Did you secretly do your homework beforehand?</p></article>
+<article class="msg right" data-record="586" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Plenty. You know Auntie Ying, right?</p></article>
+<article class="msg right" data-record="587" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Well, there you go. Teacher Ting</p></article>
+<article class="msg left" data-record="588" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Then I guess you don&#x27;t need me to teach you any work at all</p></article>
+<article class="msg right" data-record="589" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Noooo. I know a bit of this and that, I can piece things together, but I&#x27;m not as expert as P’Pat</p></article>
+<article class="msg left" data-record="590" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">But maybe more expert than P’Duen</p></article>
+<article class="msg right" data-record="591" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Preach!!!!!!</p></article>
+<article class="msg left" data-record="592" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">You sound so happy LOL</p></article>
+<article class="msg right" data-record="593" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Say it louder!!!</p></article>
+<article class="msg left" data-record="594" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">No more, enough</p></article>
+<article class="msg left" data-record="595" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Just this much stays between us. Promise first</p></article>
+<article class="msg left" data-record="596" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">What we talk about at home stays at home. Don&#x27;t take it to the office</p></article>
+<article class="msg right" data-record="597" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Promiseee</p></article>
+<article class="msg left" data-record="598" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">In a good mood, aren&#x27;t you. Not scowling at all</p></article>
+<article class="msg right" data-record="599" data-sender="tt’"><span class="who">tt’</span><p class="bubble">5555555555555</p></article>
+<article class="msg left" data-record="600" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">But let me speak up for P’Duen first. She has things she&#x27;s expert in. If she had no ability, she couldn&#x27;t lead a team, right?</p></article>
+<article class="msg left" data-record="601" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Back to our own topic. Or, if Ting already understands the whole problem, I can move on to the product matter</p></article>
+<article class="msg right" data-record="602" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I can see the picture. You summarized it clearly, too</p></article>
+<article class="msg left" data-record="603" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">That&#x27;s not it. You know a lot, which is why you understood it when you read it</p></article>
+<article class="msg right" data-record="604" data-sender="tt’"><span class="who">tt’</span><p class="bubble">You can just say I&#x27;m good, you know</p></article>
+<article class="msg right" data-record="605" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I know a weirdly lot</p></article>
+<article class="msg left" data-record="606" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">55555</p></article>
+<article class="msg left" data-record="607" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Good, good</p></article>
+<article class="msg left" data-record="608" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">For the new product, I&#x27;ll loop you into the product smartbuddy group and P’Off will brief you on the details</p></article>
+<article class="msg left" data-record="609" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Ting, you can loop me into the meeting too, okay. Go hear the brief on what they need, and what they&#x27;ll have us do next</p></article>
+<article class="msg left" data-record="610" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">And our team already has a brief form sheet, I&#x27;ll send it to Ting. You have to recheck that the details are complete, so we can continue with the comms</p></article>
+<article class="msg right" data-record="611" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Seeing this, I&#x27;m like — maybe we really should talk during work hours</p></article>
+<article class="msg left" data-record="612" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I did ask you already 5555</p></article>
+<article class="msg right" data-record="613" data-sender="tt’"><span class="who">tt’</span><p class="bubble">No no, I mean Ting can talk, but I feel like I&#x27;m bothering P’Pat</p></article>
+<article class="msg right" data-record="614" data-sender="tt’"><span class="who">tt’</span><p class="bubble">After being tired all day, you still have to be tired some more 🫠</p></article>
+<article class="msg left" data-record="615" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Then we&#x27;ll stop talking</p></article>
+<p class="receipt" data-record="616">[Read]</p>
+<article class="msg left" data-record="617" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Someone&#x27;s sulking again</p></article>
+<article class="msg right" data-record="618" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Not sulking</p></article>
+<article class="msg right" data-record="619" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Not. Sulk. Even. A. Bit</p></article>
+<article class="msg right" data-record="620" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Hup</p></article>
+<article class="msg right" data-record="621" data-sender="tt’"><span class="who">tt’</span><p class="bubble emoji-only">😡</p></article>
+<article class="msg left" data-record="622" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">55555555555</p></article>
+<article class="msg left" data-record="623" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">You really do get along with people easily</p></article>
+<article class="msg left" data-record="624" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Normally I don&#x27;t talk to anyone outside work hours, you know</p></article>
+<article class="msg right" data-record="625" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Does that mean I&#x27;m special?</p></article>
+<article class="msg left" data-record="626" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">It means you really do get along with people easily.</p></article>
+<article class="msg right" data-record="627" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Hup</p></article>
+<article class="msg right" data-record="628" data-sender="tt’"><span class="who">tt’</span><p class="bubble emoji-only">😡</p></article>
+<article class="msg left" data-record="629" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">High EQ, I guess</p></article>
+<article class="msg left" data-record="630" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">That&#x27;s almost ten hups now</p></article>
+<article class="msg right" data-record="631" data-sender="tt’"><span class="who">tt’</span><p class="bubble">P’Pat is teasing me</p></article>
+<article class="msg left" data-record="632" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">5555555</p></article>
+<article class="msg left" data-record="633" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Know what Japp wrote as a review of you?</p></article>
+<article class="msg right" data-record="634" data-sender="tt’"><span class="who">tt’</span><p class="bubble">There&#x27;s a review?</p></article>
+<article class="msg left" data-record="635" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Want to know?</p></article>
+<article class="msg right" data-record="636" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Fine, I want to know</p></article>
+<article class="msg left" data-record="637" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">A pampered rich girl, a complainer, quick to snap</p></article>
+<article class="msg right" data-record="638" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Wow</p></article>
+<article class="msg right" data-record="639" data-sender="tt’"><span class="who">tt’</span><p class="bubble">That P’Japp, just you wait</p></article>
+<article class="msg right" data-record="640" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Ting&#x27;s EQ is on the floor now</p></article>
+<article class="msg left" data-record="641" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">5555555</p></article>
+<article class="msg right" data-record="642" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I&#x27;m going to tell Fon. Wait</p></article>
+<article class="msg left" data-record="643" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Japp&#x27;s partner, right?</p></article>
+<article class="msg right" data-record="644" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Yes, Ting&#x27;s best friend</p></article>
+<article class="msg right" data-record="645" data-sender="tt’"><span class="who">tt’</span><p class="bubble">However Ting is, Fon is the same</p></article>
+<article class="msg right" data-record="646" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Talking about me when her own partner is just the same 😡</p></article>
+<article class="msg left" data-record="647" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">But it&#x27;s her partner, so she probably can handle it, no?</p></article>
+<article class="msg right" data-record="648" data-sender="tt’"><span class="who">tt’</span><p class="bubble">And can P’Pat handle me? 🥺</p></article>
+<article class="msg left" data-record="649" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Then see you tomorrow.</p></article>
+<p class="receipt" data-record="650">[Read]</p>
+<article class="msg left" data-record="651" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Sulking?</p></article>
+<article class="msg right" data-record="652" data-sender="tt’"><span class="who">tt’</span><p class="bubble">If you don&#x27;t want to talk, it&#x27;s fine</p></article>
+<article class="msg left" data-record="653" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Really?</p></article>
+<article class="msg right" data-record="654" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Really</p></article>
+<article class="msg left" data-record="655" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I just wanted to say I was more than ready to see you tomorrow</p></article>
+<article class="msg left" data-record="656" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Guess that wasn’t enough to answer your question 🤨</p></article>
+<article class="msg right" data-record="657" data-sender="tt’"><span class="who">tt’</span><p class="bubble">You’re teasing me</p></article>
+<article class="msg left" data-record="658" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Yes I was teasing you</p></article>
+<article class="msg right" data-record="659" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Many times already, you know 😡</p></article>
+<article class="msg left" data-record="660" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">55555555</p></article>
+<article class="msg left" data-record="661" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Can you hup for me one more time?</p></article>
+<article class="msg right" data-record="662" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Fine</p></article>
+<article class="msg right" data-record="663" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Hup</p></article>
+<article class="msg right" data-record="664" data-sender="tt’"><span class="who">tt’</span><p class="bubble">🫪</p></article>
+<article class="msg left" data-record="665" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Why that emoji?</p></article>
+<article class="msg left" data-record="666" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">I thought it&#x27;d be 😡</p></article>
+<article class="msg right" data-record="667" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Because I want to see P’Pat too</p></article>
+<article class="msg right" data-record="668" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Can’t wait to see you tomorrow beautiful</p></article>
+<article class="msg left" data-record="669" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Aww</p></article>
+<article class="msg left" data-record="670" data-sender="Patricia🌻"><span class="who">Patricia🌻</span><p class="bubble">Good night sweet girl 🫳</p></article>
+<article class="msg right" data-record="671" data-sender="tt’"><span class="who">tt’</span><p class="bubble emoji-only">🫠</p></article>
+<article class="msg right" data-record="672" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Niteee 🥺</p></article>
+</section>
+<section class="conversation">
+<h3 class="convo" data-record="673">prettybabies (3)</h3>
+<time class="ts" data-record="674">9:15 p.m.</time>
+<article class="msg right" data-record="675" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I love her, you know</p></article>
+<article class="msg right" data-record="676" data-sender="tt’"><span class="who">tt’</span><p class="bubble">I love the beautiful older sister so much</p></article>
+<article class="msg right" data-record="677" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Going to sleep. Want tomorrow to come quick</p></article>
+<article class="msg right" data-record="678" data-sender="tt’"><span class="who">tt’</span><p class="bubble">Can&#x27;t take it, seriously 🫠</p></article>
+<article class="msg left" data-record="679" data-sender="lalin"><span class="who">lalin</span><p class="bubble">Fon, stand by, okay @font_pcp</p></article>
+<article class="msg left" data-record="680" data-sender="font_pcp"><span class="who">font_pcp</span><p class="bubble">Yessir, the rescue truck is already waiting to collect the baby gay&#x27;s body, boss 🫡</p></article>
+</section>
+<section class="author-note" aria-label="Author’s note"><h2>Author’s note</h2>
+<p class="dots" data-record="681">.</p>
+<p class="dots" data-record="682">.</p>
+<p class="dots" data-record="683">.</p>
+<p data-record="684">I&#x27;ve been Nong Miu&#x27;s mama for so long, and today is finally here. I love Nong Muay and P’Farang so much 🤏😭</p>
+<p data-record="685">Will Fon get to collect the body, I wonder 5555555555</p>
+<p data-record="686">Thank you, everyone, for reading 🙏🙇🏻‍♀️</p>
+</section>
+</main>
+<script src="../../assets/whatsapp-override.js"></script>
+</body>
+</html>
